@@ -31,7 +31,7 @@ def is_prime_number(i, en):         # 验证一个偶数是否等于两个奇素
     if is_composite_or_prime_number(ri, xi, ki) == "prime":
         if i < 9:       # 以en为中数，判断待验证偶数2*en的一个加数2*en-i为素数
             ""
-            # print("{}可以写成两个奇素数{}，{}之和,i={}".format(2*en, xi, 2*en-xi, i))
+            # print("{} 可以写成两个奇素数 {}，{}之和".format(2*en, xi, 2*en-xi))
         else:           # 以en为中数，判断待验证偶数2*en的另一个加数i为素数
             is_left_prime_number(i, en)
     else:
@@ -53,7 +53,7 @@ def is_left_prime_number(i, en):        # 判断待验证偶数的较小的加�
 
     if is_composite_or_prime_number(ri, yi, ki) == "prime":
         ""
-        # print("{}可以写成两个奇素数{}，{}之和,i={}".format(2*en, 2*en-yi, yi, i))
+        # print("{} 可以写成两个奇素数 {}，{}之和".format(2*en, 2*en-yi, yi))
     else:
         if i >= en:
             print("{}不能写成两个奇素数之和".format(en))
@@ -63,7 +63,7 @@ def is_left_prime_number(i, en):        # 判断待验证偶数的较小的加�
 
 
 def main():
-    for j in range(21000000, 21500000):
+    for j in range(22000000, 22200000):
         eni = j
         ii = 3
         is_prime_number(ii, eni)
